@@ -1,0 +1,45 @@
+.hero{
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.hero__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.hero__title{
+    max-width: 539px;
+    @include title;
+    margin-bottom: 25px;
+}
+.hero__text{
+    max-width: 635px;
+    @include text;
+    margin-bottom: 39px;
+}
+.hero__btn_box{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    white-space: nowrap;
+}
+.hero__btn{
+    @include btn(20px 28px);
+   
+}
+.hero__img{
+    max-width: 318px;
+}
+
+@media screen  and (max-width:900px){
+    
+    .hero__container{
+       flex-direction: column-reverse;
+       text-align: center;
+    }
+    .hero__btn_box{
+        flex-direction: column;
+    }
+   
+}

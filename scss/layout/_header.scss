@@ -1,0 +1,38 @@
+.header{
+    padding-top: 56px;
+}
+.header__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__list{
+    display: flex;
+    align-items: center;
+    gap: 41px;
+}
+.header__link{
+    @include subText;
+}
+.header__btn{
+    @include btn(20px 26px);
+    margin-left: 40px;
+}
+.header__nav{
+    display: flex;
+    align-items: center;
+
+}
+
+
+@media screen and (max-width:900px){
+    .header__list{
+        display: none;
+    }
+    .header__btn{
+        font-size: 0;
+        background-repeat: no-repeat;
+        background-image: url(../../img/menu.svg);
+        background-position:center;
+    }
+}

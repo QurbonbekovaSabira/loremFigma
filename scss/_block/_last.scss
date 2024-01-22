@@ -1,0 +1,31 @@
+.last {
+  padding-top: 88px;
+  padding-bottom: 88px;
+  background-color: #dbdbdb;
+}
+.last__title {
+  max-width: 589px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+  text-align: center;
+  @include title(42px);
+  color: #828282;
+}
+.last__text {
+  max-width: 676px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #828282;
+  @include text(20px);
+  margin-bottom: 40px;
+  text-align: center;
+}
+.last__btn{
+    @include  btn;
+  display: block;
+  white-space: nowrap;
+    max-width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+}
